@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 100vw;
+            height: 100vh;
+            background-color:rgb(13, 10, 181);
+            display: flex;
+        }
+        .child1{
+            width: 100%;
+            height: 3%;
+            display: flex;
+            background-color: white;
+        }
+        .sub1{
+            height: 100%;
+            width: 6%;
+            border:2px white ;
+            display: flex;
+        }
+        .sub2{
+            height: 100%;
+            width: 12%;
+            background-color: rgb(38, 34, 34);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sub3{
+            height: 100%;
+            width: 75%;
+            border:2px white ;
+            display: flex;
+        }
+        .sub4{
+            height: 100%;
+            width: 2%;
+            border:2px white ;
+            display: flex;
+            background-color: brown;
+        }
+        .sub5{
+            height: 100%;
+            width: 5%;
+            border:2px white ;
+            display: flex;
+            background-color: white;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        </style>
+        </head>
+        <body>
+            <div class="parent">
+                <div class="child1">
+                    <div class="sub1">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png" width="60px" height="20px">
+                    </div>
+                    <div class="sub2"></div>
+                    <div class="sub3"> </div>
+                    <div class="sub4">
+                       <input placeholder="Search..">
+                    </div>
+                    <div class="sub5">
+                        <img src="data:image/png;base64,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" width="30px" height="20px">
+                    </div>
+        </body>
+        </html>
